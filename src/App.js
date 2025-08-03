@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import MovieCard from "./MovieCard";
 import "./styles.css";
 
-const API_KEY = "f8c3accd" ; // Replace with OMDb API key
+const API_KEY = "" ; // Replace with OMDb API key
 
 const App = () => {
   const [query, setQuery] = useState("");
@@ -14,14 +14,14 @@ const App = () => {
   });
 
   const fetchMovies = async () => {
-    const res = await fetch(`https://www.omdbapi.com/?s=${query}&apikey=f8c3accd`);
+    const res = await fetch(`https://www.omdbapi.com/?s=${query}&apikey=API_KEY`);
     const data = await res.json();
     if (data.Search) setMovies(data.Search);
     else setMovies([]);
   };
 
    const fetchMovieDetails = async (id) => {
-    const res = await fetch(`https://www.omdbapi.com/?i=${id}&apikey=f8c3accd`);
+    const res = await fetch(`https://www.omdbapi.com/?i=${id}&apikey=API_KEY`);
     const data = await res.json();
     setSelectedMovie(data);
   };
