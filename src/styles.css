@@ -1,0 +1,119 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  color: white;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  padding: 40px 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #d190ff;
+  margin: 1;
+  padding: 30px 20px;
+  text-align: center;
+  width: 100vw; /* make it span full screen width */
+  background-color: #1a1a1a;
+}
+
+
+input {
+  padding: 12px 18px;
+  font-size: 5rem;
+  width: 90%;
+  max-width: 1000px;
+  border: 2px solid #9cafff;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  background-color: #111;
+  color: white;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+  width: 100vw; /* span full width */
+  box-sizing: border-box;
+}
+
+
+.movie-detail {
+  margin-top: 20px;
+  background: #7e8008;
+  padding: 20px;
+  font-size: 50px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  background: rgb(167, 1, 115);
+  backdrop-filter: blur(10px);
+  color: white;
+  width: 400px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 30px rgba(240, 135, 236, 0.4);
+}
+
+.card img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-bottom: 2px solid #ddd;
+}
+
+.card-body {
+  font-size: 2.1rem;
+  padding: 15px;
+  text-align: left;
+}
+
+.card-body h3 {
+  font-size: 4.1rem;
+  margin: 0 0 5px;
+  color: #000000;
+}
+
+button {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  padding: 5px 10px;
+  background-color: #bd4be6e3;
+  border: none;
+  border-radius: 5px;
+  color: rgb(229, 233, 242);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 70%;
+}
+
+button:hover {
+  background-color: #0d030a;
+  transform: scale(1.05);
+}
+
